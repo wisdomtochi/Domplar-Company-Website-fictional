@@ -1,0 +1,340 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Styling */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #f4f4f4;
+  cursor: pointer;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.text-primary {
+  color: #0c1daf;
+}
+
+.text-dark {
+  color: #a3685d;
+}
+
+.bg-dark {
+  background-color: #a3685d;
+}
+
+.text-light {
+  color: #f4f4f4;
+}
+
+.dark-text {
+  color: #222;
+}
+
+.l-heading {
+  font-size: 55px;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+.lead {
+  line-height: 1.5;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.m-heading {
+  text-align: center;
+  font-size: 35px;
+  margin-top: 20px;
+  line-height: 1;
+}
+
+.s-heading {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+  line-height: 1;
+}
+
+.btn {
+  background: #0c1daf;
+  padding: 10px 25px;
+  font-size: 20px;
+  border: none;
+  border-radius: 25px;
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  background: #0c198b;
+}
+
+.btn-light {
+  border: 2px solid #0c1daf;
+  background: none;
+}
+
+/* Padding */
+.py-1 {
+  padding: 10px 0;
+}
+.py-2 {
+  padding: 20px 0;
+}
+.py-3 {
+  padding: 30px 0;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  background: #915246;
+  padding: 20px 30px 20px 20px;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  text-align: center;
+}
+
+#navbar ul li {
+  padding: 3px 3px 7px;
+}
+
+#navbar li a {
+  padding: 5px 20px 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#navbar li a:hover,
+#navbar li a.current {
+  background-color: #0c1cafc4;
+  border-radius: 10px;
+}
+
+/* Showcase */
+#showcase {
+  background: #333 url("../images/person-1.png") no-repeat center center/cover;
+  /* height: 100vh; */
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  align-items: center;
+  padding: 12px;
+  /* Overlay */
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* About Page */
+
+#about-info .info-content {
+  /* background: #a3685d; */
+  margin-bottom: 20px;
+  display: flex;
+}
+
+#about-info .info-content div{
+  flex: 1;
+}
+
+#about-info h2 {
+  margin: 20px;
+  line-height: 1.3;
+}
+
+#about-info .info-content .info-left {
+  background: #333 url('../images/director.jpg') no-repeat center center/cover;
+  /* height: 40vh; */
+}
+
+#about-info .info-content .info-right {
+  background-color: #a3685d;
+  padding: 7px 20px;
+}
+
+#about-info .info-content .info-right h3 {
+  line-height: 1.2;
+  padding-bottom: 10px;
+}
+
+/* Services Page */
+#services-info {
+    margin-top: 30px;
+  margin-bottom: 100px;
+  width: 100%;
+  background-color: #333;
+}
+
+#services-info h2 {
+  margin: 20px 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+}
+
+#services-info .items {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  background-color: #333;
+  border-radius: 5px;
+  margin-top: 20px;
+  flex: 1;
+}
+
+#services-info .items .item {
+  margin-right: 20px;
+  text-align: center;
+}
+
+/* #services-info .items .item:last-child {
+  margin-right: 50px;
+  margin: auto;
+} */
+
+#services-info .items .item img {
+  width: 100%;
+  flex: 1;
+  height: 30vh;
+  border: 2px solid white;
+  border-radius: 7px;
+}
+
+#services-info .items .item h3 {
+  color: #a3685d;
+  font-size: 22px;
+}
+
+/* Team Page */
+#team-info h2 {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+#team-info .items {
+  display: flex;
+  padding: 20px 50px 0px 10px;
+  border-radius: 5px;
+  height: 100%;
+  margin-top: 20px;
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+#team-info .items .item {
+  text-align: center;
+  margin: auto;
+}
+
+#team-info .items .item img {
+  flex: 1;
+  height: 30vh;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+#team-info .items .item .item-2{
+    background-color: #333;
+}
+
+
+/* Contact Page */
+#contact-info{
+    padding: 30px 0px;
+    background-color: #1827b4;
+    color: #e6dada;
+}
+
+#contact-info h2{
+    margin-bottom: 20px;
+    color: #f4f4f4;
+}
+
+
+#contact-info p{
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+#contact-info .register-para{
+    margin-bottom: 35px;
+}
+
+#contact-info .form-group{
+    margin-bottom: 25px;
+    margin-left: 30px;
+}
+
+#contact-info .form-group label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contact-info .form-group input{
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+#contact-info .form-group input:focus, textarea{
+    outline: none;
+}
+
+#contact-info .form-group-2 label{
+    margin-bottom: 20px;
+}
+
+#contact-info .form-group-2 input{
+    width: 10%;
+}
+
+#contact-info textarea{
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.btn-submit{
+  margin-left: 30px;
+  background: #7983df;
+}
+
+.btn-submit:hover{
+  color: #f4f4f4;
+}
+
+#main-footer{
+    background: #121d88e8;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
